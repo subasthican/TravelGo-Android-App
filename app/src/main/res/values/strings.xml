@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TravelGo</string>
+    
+    <!-- Navigation Labels -->
+    <string name="nav_home">Home</string>
+    <string name="nav_explore">Explore</string>
+    <string name="nav_itinerary">Itinerary</string>
+    <string name="nav_profile">Profile</string>
+    
+    <!-- Splash Screen -->
+    <string name="splash_title">Welcome to TravelGo</string>
+    <string name="splash_subtitle">Your Smart Travel Companion</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Plan Your Journey</string>
+    <string name="onboarding_desc_1">Create detailed itineraries and organize your travel plans with ease</string>
+    <string name="onboarding_title_2">Discover Places</string>
+    <string name="onboarding_desc_2">Find amazing attractions, restaurants, and hidden gems at your destination</string>
+    <string name="onboarding_title_3">Track Memories</string>
+    <string name="onboarding_desc_3">Capture and organize your travel photos and experiences</string>
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_start">Get Started</string>
+    
+    <!-- Login/Registration -->
+    <string name="login_title">Welcome Back</string>
+    <string name="login_subtitle">Sign in to continue your journey</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Sign In</string>
+    <string name="register_link">Don\'t have an account? Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    
+    <!-- Home Screen -->
+    <string name="home_greeting">Good Morning, Traveler!</string>
+    <string name="home_subtitle">Ready for your next adventure?</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="plan_trip">Plan Trip</string>
+    <string name="view_itinerary">View Itinerary</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="upcoming_trips">Upcoming Trips</string>
+    <string name="recent_places">Recent Places</string>
+    <string name="weather_title">Weather</string>
+    <string name="budget_title">Budget</string>
+    
+    <!-- Explore Screen -->
+    <string name="explore_title">Explore Destinations</string>
+    <string name="search_placeholder">Search places, attractions...</string>
+    <string name="popular_destinations">Popular Destinations</string>
+    <string name="nearby_attractions">Nearby Attractions</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hotels">Hotels</string>
+    <string name="activities">Activities</string>
+    
+    <!-- Itinerary Screen -->
+    <string name="itinerary_title">My Itinerary</string>
+    <string name="add_day">Add Day</string>
+    <string name="add_activity">Add Activity</string>
+    <string name="day">Day</string>
+    <string name="time">Time</string>
+    <string name="location">Location</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    
+    <!-- Profile Screen -->
+    <string name="profile_title">My Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="personal_info">Personal Information</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="preferences">Preferences</string>
+    <string name="language">Language</string>
+    <string name="currency">Currency</string>
+    <string name="notifications">Notifications</string>
+    <string name="about">About</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="logout">Logout</string>
+    
+    <!-- Common Actions -->
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="view">View</string>
+    <string name="share">Share</string>
+    <string name="favorite">Favorite</string>
+    <string name="rate">Rate</string>
+    <string name="book">Book</string>
+    <string name="call">Call</string>
+    <string name="directions">Directions</string>
+    
+    <!-- Placeholder Text -->
+    <string name="no_trips_yet">No trips planned yet</string>
+    <string name="no_photos_yet">No photos yet</string>
+    <string name="no_expenses_yet">No expenses recorded</string>
+    <string name="start_planning">Start planning your first trip!</string>
+    
+    <!-- Error Messages -->
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_general">Something went wrong. Please try again.</string>
+    <string name="error_invalid_input">Please check your input and try again.</string>
+    
+    <!-- Success Messages -->
+    <string name="success_saved">Successfully saved!</string>
+    <string name="success_updated">Successfully updated!</string>
+    <string name="success_deleted">Successfully deleted!</string>
+</resources>
