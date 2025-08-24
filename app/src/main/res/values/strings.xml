@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TravelGo</string>
-    
+
     <!-- Navigation Labels -->
     <string name="nav_home">Home</string>
-    <string name="nav_explore">Explore</string>
-    <string name="nav_itinerary">Itinerary</string>
+    <string name="nav_history">History</string>
+    <string name="nav_send">Send</string>
     <string name="nav_profile">Profile</string>
-    
+
     <!-- Splash Screen -->
-    <string name="splash_title">Welcome to TravelGo</string>
-    <string name="splash_subtitle">Your Smart Travel Companion</string>
-    
+    <string name="splash_title">Travelgo</string>
+    <string name="splash_subtitle">Find Your Next Adventure! With Us</string>
+
     <!-- Onboarding -->
     <string name="onboarding_title_1">Plan Your Journey</string>
     <string name="onboarding_desc_1">Create detailed itineraries and organize your travel plans with ease</string>
@@ -22,7 +22,7 @@
     <string name="onboarding_skip">Skip</string>
     <string name="onboarding_next">Next</string>
     <string name="onboarding_start">Get Started</string>
-    
+
     <!-- Login/Registration -->
     <string name="login_title">Welcome Back</string>
     <string name="login_subtitle">Sign in to continue your journey</string>
@@ -31,10 +31,31 @@
     <string name="login_button">Sign In</string>
     <string name="register_link">Don\'t have an account? Sign Up</string>
     <string name="forgot_password">Forgot Password?</string>
-    
+
     <!-- Home Screen -->
-    <string name="home_greeting">Good Morning, Traveler!</string>
-    <string name="home_subtitle">Ready for your next adventure?</string>
+    <string name="home_greeting">Hi, Subasthican 👋</string>
+    <string name="home_subtitle">Explore the world</string>
+    <string name="search_hint">Search places</string>
+    <string name="popular_places">Popular places</string>
+    <string name="view_all">View all</string>
+    <string name="filter_most_viewed">Most Viewed</string>
+    <string name="filter_nearby">Nearby</string>
+    <string name="filter_latest">Latest</string>
+    <string name="sigiriya_title">Sigiriya, Srilanka</string>
+    <string name="sigiriya_location">Sigiriya, Sri Lanka</string>
+    <string name="nallur_title">Nallur, Sril</string>
+    <string name="nallur_location">Jaffna, Sri Lanka</string>
+
+    <!-- Details Page -->
+    <string name="details_overview">Overview</string>
+    <string name="details_details">Details</string>
+    <string name="details_duration">3 hours</string>
+    <string name="details_weather">28 °C</string>
+    <string name="details_rating">4.7</string>
+    <string name="details_price_per">Price(per)</string>
+    <string name="details_price_amount">Rs20000</string>
+    <string name="details_book_now">Book Now</string>
+    <string name="details_sigiriya_description">This historic temple is renowned for its remarkable cultural and spiritual significance. It features intricate Dravidian-style architecture, towering gopurams (gateway towers), and beautifully carved stone pillars. The temple complex includes multiple shrines dedicated to various deities, with the main sanctum housing the presiding deity. Visitors can explore the ornate halls, admire the detailed sculptures, and experience the spiritual atmosphere of this ancient place of worship.</string>
     <string name="quick_actions">Quick Actions</string>
     <string name="plan_trip">Plan Trip</string>
     <string name="view_itinerary">View Itinerary</string>
@@ -44,7 +65,7 @@
     <string name="recent_places">Recent Places</string>
     <string name="weather_title">Weather</string>
     <string name="budget_title">Budget</string>
-    
+
     <!-- Explore Screen -->
     <string name="explore_title">Explore Destinations</string>
     <string name="search_placeholder">Search places, attractions...</string>
@@ -53,7 +74,7 @@
     <string name="restaurants">Restaurants</string>
     <string name="hotels">Hotels</string>
     <string name="activities">Activities</string>
-    
+
     <!-- Itinerary Screen -->
     <string name="itinerary_title">My Itinerary</string>
     <string name="add_day">Add Day</string>
@@ -65,7 +86,7 @@
     <string name="save">Save</string>
     <string name="cancel">Cancel</string>
     <string name="delete">Delete</string>
-    
+
     <!-- Profile Screen -->
     <string name="profile_title">My Profile</string>
     <string name="edit_profile">Edit Profile</string>
@@ -80,7 +101,7 @@
     <string name="about">About</string>
     <string name="help_support">Help &amp; Support</string>
     <string name="logout">Logout</string>
-    
+
     <!-- Common Actions -->
     <string name="add">Add</string>
     <string name="edit">Edit</string>
@@ -91,18 +112,18 @@
     <string name="book">Book</string>
     <string name="call">Call</string>
     <string name="directions">Directions</string>
-    
+
     <!-- Placeholder Text -->
     <string name="no_trips_yet">No trips planned yet</string>
     <string name="no_photos_yet">No photos yet</string>
     <string name="no_expenses_yet">No expenses recorded</string>
     <string name="start_planning">Start planning your first trip!</string>
-    
+
     <!-- Error Messages -->
     <string name="error_network">Network error. Please check your connection.</string>
     <string name="error_general">Something went wrong. Please try again.</string>
     <string name="error_invalid_input">Please check your input and try again.</string>
-    
+
     <!-- Success Messages -->
     <string name="success_saved">Successfully saved!</string>
     <string name="success_updated">Successfully updated!</string>

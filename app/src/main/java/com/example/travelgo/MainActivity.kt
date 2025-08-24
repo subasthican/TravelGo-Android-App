@@ -1,5 +1,6 @@
 package com.example.travelgo
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -18,25 +19,42 @@ class MainActivity : AppCompatActivity() {
                     loadFragment(HomeFragment())
                     true
                 }
-                R.id.nav_explore -> {
-                    loadFragment(ExploreFragment())
+                R.id.nav_history -> {
+                    loadFragment(HistoryFragment())
                     true
                 }
-                R.id.nav_itinerary -> {
-                    loadFragment(ItineraryFragment())
+                R.id.nav_booked_packages -> {
+                    loadFragment(BookedPackagesFragment())
                     true
                 }
                 R.id.nav_profile -> {
-                    loadFragment(ProfileFragment())
+                    // Navigate to ProfileActivity instead of loading ProfileFragment
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 else -> false
             }
         }
         
-        // Load home fragment by default
-        if (savedInstanceState == null) {
-            loadFragment(HomeFragment())
+        // Check if we're coming from ProfileActivity with a specific tab selected
+        val selectedTab = intent.getStringExtra("selected_tab")
+        if (selectedTab != null) {
+            when (selectedTab) {
+                "history" -> {
+                    loadFragment(HistoryFragment())
+                    bottomNav.selectedItemId = R.id.nav_history
+                }
+                "booked_packages" -> {
+                    loadFragment(BookedPackagesFragment())
+                    bottomNav.selectedItemId = R.id.nav_booked_packages
+                }
+            }
+        } else {
+            // Load home fragment by default
+            if (savedInstanceState == null) {
+                loadFragment(HomeFragment())
+            }
         }
     }
     

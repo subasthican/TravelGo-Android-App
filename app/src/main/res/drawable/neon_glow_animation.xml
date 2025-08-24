@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    
+    <!-- Pulse 1: Normal glow -->
+    <item android:duration="1000">
+        <shape>
+            <stroke
+                android:width="3dp"
+                android:color="#00BFFF" />
+            <corners android:radius="12dp" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    
+    <!-- Pulse 2: Brighter glow -->
+    <item android:duration="1000">
+        <shape>
+            <stroke
+                android:width="4dp"
+                android:color="#00FFFF" />
+            <corners android:radius="12dp" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    
+    <!-- Pulse 3: Maximum glow -->
+    <item android:duration="1000">
+        <shape>
+            <stroke
+                android:width="5dp"
+                android:color="#87CEEB" />
+            <corners android:radius="12dp" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    
+    <!-- Pulse 4: Back to normal -->
+    <item android:duration="1000">
+        <shape>
+            <stroke
+                android:width="3dp"
+                android:color="#00BFFF" />
+            <corners android:radius="12dp" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+    
+</animation-list>

@@ -1,46 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primary"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="32dp">
+    android:background="@drawable/splash_blue_gradient">
 
-    <!-- App Icon -->
-    <TextView
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:background="@color/white"
-        android:gravity="center"
-        android:text="✈️"
-        android:textSize="60sp" />
+    <!-- Logo Image - Full Screen Background -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo_text"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center" />
 
-    <!-- App Name -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/app_name"
-        android:textColor="@color/white"
-        android:textSize="36sp"
-        android:textStyle="bold" />
-
-    <!-- Tagline -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:text="@string/splash_subtitle"
-        android:textColor="@color/primary_light"
-        android:textSize="18sp" />
-
-    <!-- Loading Indicator -->
+    <!-- Progress Bar - In Front, Bottom Center -->
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:alpha="0.9"
         android:indeterminateTint="@color/white" />
 
-</LinearLayout>
+</FrameLayout>

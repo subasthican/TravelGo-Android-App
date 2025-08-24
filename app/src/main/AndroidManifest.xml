@@ -11,24 +11,173 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TravelGo">
+
         <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.TravelGo.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
         <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:theme="@style/Theme.TravelGo.NoActionBar" />
-            
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".BookingMembersActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".BookingLocationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".BookingPaymentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".LanguageSettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".CurrencySettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".FavouritesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".SavedItemsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".NotificationsSettingsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".PrivacySecurityActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".HelpSupportActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".SigiriyaDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".KandyDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".GalleDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".PolonnaruwaDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".AnuradhapuraDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".DambullaDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".YalaDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".MirissaDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".EllaDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".NallurDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".PaymentSuccessActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".AddPaymentActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".AIChatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".AllDestinationsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".PersonCountActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".BookedPackagesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".ForgotPasswordVerificationActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+        <activity
+            android:name=".ForgotPasswordNewPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TravelGo.NoActionBar" />
+
     </application>
 
 </manifest>

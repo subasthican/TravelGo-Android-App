@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    
+    <!-- Frame 1: Soft cyan glow -->
+    <item android:duration="800">
+        <layer-list>
+            <!-- Outer glow layer -->
+            <item>
+                <shape>
+                    <stroke
+                        android:width="6dp"
+                        android:color="#00FFFF" />
+                    <corners android:radius="16dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Inner glow layer -->
+            <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+                <shape>
+                    <stroke
+                        android:width="4dp"
+                        android:color="#00BFFF" />
+                    <corners android:radius="14dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Core border -->
+            <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+                <shape>
+                    <stroke
+                        android:width="2dp"
+                        android:color="#87CEEB" />
+                    <corners android:radius="12dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+    <!-- Frame 2: Bright blue pulse -->
+    <item android:duration="600">
+        <layer-list>
+            <!-- Outer glow layer -->
+            <item>
+                <shape>
+                    <stroke
+                        android:width="8dp"
+                        android:color="#00FFFF" />
+                    <corners android:radius="18dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Inner glow layer -->
+            <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+                <shape>
+                    <stroke
+                        android:width="6dp"
+                        android:color="#00BFFF" />
+                    <corners android:radius="16dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Core border -->
+            <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+                <shape>
+                    <stroke
+                        android:width="3dp"
+                        android:color="#87CEEB" />
+                    <corners android:radius="14dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+    <!-- Frame 3: Electric blue burst -->
+    <item android:duration="500">
+        <layer-list>
+            <!-- Outer glow layer -->
+            <item>
+                <shape>
+                    <stroke
+                        android:width="10dp"
+                        android:color="#00FFFF" />
+                    <corners android:radius="20dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Inner glow layer -->
+            <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+                <shape>
+                    <stroke
+                        android:width="8dp"
+                        android:color="#00BFFF" />
+                    <corners android:radius="18dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Core border -->
+            <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+                <shape>
+                    <stroke
+                        android:width="4dp"
+                        android:color="#87CEEB" />
+                    <corners android:radius="16dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+    <!-- Frame 4: Neon cyan explosion -->
+    <item android:duration="400">
+        <layer-list>
+            <!-- Outer glow layer -->
+            <item>
+                <shape>
+                    <stroke
+                        android:width="12dp"
+                        android:color="#00FFFF" />
+                    <corners android:radius="22dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Inner glow layer -->
+            <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+                <shape>
+                    <stroke
+                        android:width="10dp"
+                        android:color="#00BFFF" />
+                    <corners android:radius="20dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Core border -->
+            <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+                <shape>
+                    <stroke
+                        android:width="6dp"
+                        android:color="#87CEEB" />
+                    <corners android:radius="18dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+    <!-- Frame 5: Back to soft glow -->
+    <item android:duration="800">
+        <layer-list>
+            <!-- Outer glow layer -->
+            <item>
+                <shape>
+                    <stroke
+                        android:width="6dp"
+                        android:color="#00FFFF" />
+                    <corners android:radius="16dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Inner glow layer -->
+            <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+                <shape>
+                    <stroke
+                        android:width="4dp"
+                        android:color="#00BFFF" />
+                    <corners android:radius="14dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+            <!-- Core border -->
+            <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
+                <shape>
+                    <stroke
+                        android:width="2dp"
+                        android:color="#87CEEB" />
+                    <corners android:radius="12dp" />
+                    <solid android:color="@android:color/transparent" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    
+</animation-list>
