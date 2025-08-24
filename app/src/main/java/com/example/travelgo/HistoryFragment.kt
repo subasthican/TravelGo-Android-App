@@ -34,7 +34,7 @@ class HistoryFragment : Fragment() {
         seenMinuteAgoRecycler.layoutManager = LinearLayoutManager(requireContext())
         
         val seenMinuteAgoPackages = listOf(
-            HistoryPackage("Sigiriya, Sri Lanka", "Ancient rock fortress", R.drawable.placeholder_sigiriya)
+            HistoryPackage("Sigiriya, Sri Lanka", "Ancient rock fortress", R.drawable.sigiriya)
         )
         
         val minuteAdapter = HistoryPackagesAdapter(seenMinuteAgoPackages)
@@ -45,8 +45,8 @@ class HistoryFragment : Fragment() {
         seenHourAgoRecycler.layoutManager = LinearLayoutManager(requireContext())
         
         val seenHourAgoPackages = listOf(
-            HistoryPackage("Nallur Temple, Sri Lanka", "Historic Hindu temple", R.drawable.placeholder_nallur),
-            HistoryPackage("Nuwara Eliya Ella, Sri Lanka", "Beautiful tea plantations", R.drawable.placeholder_sigiriya)
+            HistoryPackage("Nallur Temple, Sri Lanka", "Historic Hindu temple", R.drawable.nallur),
+            HistoryPackage("Ella, Sri Lanka", "Beautiful tea plantations", R.drawable.ella)
         )
         
         val hourAdapter = HistoryPackagesAdapter(seenHourAgoPackages)

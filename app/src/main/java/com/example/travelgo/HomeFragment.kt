@@ -40,15 +40,15 @@ class HomeFragment : Fragment() {
     }
     
     private fun setupClickListeners(view: View) {
-        // Profile Logo Button
-        view.findViewById<LinearLayout>(R.id.profile_logo_button).setOnClickListener {
-            val intent = Intent(requireContext(), ProfileActivity::class.java)
-            startActivity(intent)
-        }
-        
         // View All Button
         view.findViewById<TextView>(R.id.view_all_button).setOnClickListener {
             val intent = Intent(requireContext(), AllDestinationsActivity::class.java)
+            startActivity(intent)
+        }
+        
+        // AI Chat Button
+        view.findViewById<LinearLayout>(R.id.ai_chat_button).setOnClickListener {
+            val intent = Intent(requireContext(), AIChatActivity::class.java)
             startActivity(intent)
         }
     }
@@ -129,18 +129,18 @@ class HomeFragment : Fragment() {
         destinationsRecyclerView = view.findViewById(R.id.destinations_recycler)
         destinationsRecyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         
-        // Create sample destination data
+        // Create sample destination data with actual package images
         val destinations = listOf(
-            Destination("Sigiriya, Sri Lanka", "Sigiriya, Sri Lanka", "4.8", R.drawable.placeholder_sigiriya),
-            Destination("Kandy, Sri Lanka", "Central Province", "4.7", R.drawable.placeholder_sigiriya),
-            Destination("Galle, Sri Lanka", "Southern Province", "4.6", R.drawable.placeholder_sigiriya),
-            Destination("Polonnaruwa, Sri Lanka", "North Central Province", "4.5", R.drawable.placeholder_sigiriya),
-            Destination("Anuradhapura, Sri Lanka", "North Central Province", "4.4", R.drawable.placeholder_sigiriya),
-            Destination("Dambulla, Sri Lanka", "Central Province", "4.3", R.drawable.placeholder_sigiriya),
-            Destination("Yala, Sri Lanka", "Southern Province", "4.2", R.drawable.placeholder_sigiriya),
-            Destination("Mirissa, Sri Lanka", "Southern Province", "4.1", R.drawable.placeholder_sigiriya),
-            Destination("Ella, Sri Lanka", "Uva Province", "4.0", R.drawable.placeholder_sigiriya),
-            Destination("Nallur, Sri Lanka", "Jaffna", "4.9", R.drawable.placeholder_nallur)
+            Destination("Sigiriya, Sri Lanka", "Sigiriya, Sri Lanka", "4.8", R.drawable.sigiriya),
+            Destination("Kandy, Sri Lanka", "Central Province", "4.7", R.drawable.kandy),
+            Destination("Galle, Sri Lanka", "Southern Province", "4.6", R.drawable.galle),
+            Destination("Polonnaruwa, Sri Lanka", "North Central Province", "4.5", R.drawable.polonnaruwa),
+            Destination("Anuradhapura, Sri Lanka", "North Central Province", "4.4", R.drawable.anurathapura),
+            Destination("Dambulla, Sri Lanka", "Central Province", "4.3", R.drawable.dumbulla),
+            Destination("Yala, Sri Lanka", "Southern Province", "4.2", R.drawable.yalla),
+            Destination("Mirissa, Sri Lanka", "Southern Province", "4.1", R.drawable.mirissa),
+            Destination("Ella, Sri Lanka", "Uva Province", "4.0", R.drawable.ella),
+            Destination("Nallur, Sri Lanka", "Jaffna", "4.9", R.drawable.nallur)
         )
         
         val adapter = DestinationsAdapter(destinations) { destination ->

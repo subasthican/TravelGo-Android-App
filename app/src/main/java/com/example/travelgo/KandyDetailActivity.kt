@@ -14,7 +14,7 @@ class KandyDetailActivity : AppCompatActivity() {
         
         val backButton = findViewById<ImageButton>(R.id.back_button)
         val bookmarkButton = findViewById<ImageButton>(R.id.bookmark_button)
-        val shareButton = findViewById<ImageButton>(R.id.share_button)
+
         val bookNowButton = findViewById<Button>(R.id.book_now_button)
         
         // Back button
@@ -27,10 +27,7 @@ class KandyDetailActivity : AppCompatActivity() {
             Toast.makeText(this, "Kandy added to favorites! ❤️", Toast.LENGTH_SHORT).show()
         }
         
-        // Share button
-        shareButton.setOnClickListener {
-            Toast.makeText(this, "Sharing Kandy details...", Toast.LENGTH_SHORT).show()
-        }
+
         
         // Book Now button
         bookNowButton.setOnClickListener {

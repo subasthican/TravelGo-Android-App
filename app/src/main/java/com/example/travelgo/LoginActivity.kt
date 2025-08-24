@@ -37,9 +37,9 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this, "Register link not found!", Toast.LENGTH_LONG).show()
         }
         
-        // Set up forgot password link - navigate to forgot password flow
-        val forgotPasswordLink = findViewById<TextView>(R.id.tv_forgot_password)
-        forgotPasswordLink?.setOnClickListener {
+        // Set up forgot password button - navigate to forgot password flow
+        val forgotPasswordButton = findViewById<Button>(R.id.forgot_password_button)
+        forgotPasswordButton?.setOnClickListener {
             val intent = Intent(this, ForgotPasswordActivity::class.java)
             startActivity(intent)
         }

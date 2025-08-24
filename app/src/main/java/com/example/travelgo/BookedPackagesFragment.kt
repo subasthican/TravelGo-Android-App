@@ -33,9 +33,9 @@ class BookedPackagesFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         
         val bookedPackages = listOf(
-            BookedPackage("Sigiriya Adventure", "Booked on: 15 Dec 2024", "Status: Confirmed", R.drawable.placeholder_sigiriya),
-            BookedPackage("Kandy Cultural Tour", "Booked on: 12 Dec 2024", "Status: Confirmed", R.drawable.placeholder_sigiriya),
-            BookedPackage("Galle Fort Experience", "Booked on: 10 Dec 2024", "Status: Confirmed", R.drawable.placeholder_sigiriya)
+            BookedPackage("Sigiriya Adventure", "Booked on: 15 Dec 2024", "Status: Confirmed", R.drawable.sigiriya),
+            BookedPackage("Kandy Cultural Tour", "Booked on: 12 Dec 2024", "Status: Confirmed", R.drawable.kandy),
+            BookedPackage("Galle Fort Experience", "Booked on: 10 Dec 2024", "Status: Confirmed", R.drawable.galle)
         )
         
         val adapter = BookedPackagesAdapter(bookedPackages)

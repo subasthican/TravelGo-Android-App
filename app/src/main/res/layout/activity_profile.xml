@@ -51,29 +51,6 @@
                 </LinearLayout>
 
                 <!-- Profile Icons -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:gravity="end">
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginEnd="12dp"
-                        android:background="@drawable/circle_grey_outline"
-                        android:src="@drawable/ic_globe"
-                        android:tint="@color/white" />
-
-                    <ImageView
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/circle_orange"
-                        android:src="@drawable/ic_profile"
-                        android:tint="@color/white" />
-
-                </LinearLayout>
 
             </LinearLayout>
 
@@ -189,7 +166,7 @@
                     android:textStyle="bold"
                     android:gravity="center"
                     android:padding="16dp"
-                    android:background="@color/card_background" />
+                    android:background="@drawable/profile_header_background" />
 
                 <!-- Favourites Option -->
                 <LinearLayout
@@ -205,7 +182,7 @@
                     android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:background="@drawable/profile_option_background">
+                    android:background="?android:attr/selectableItemBackground">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -253,7 +230,7 @@
                     android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:background="@drawable/profile_option_background">
+                    android:background="?android:attr/selectableItemBackground">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -301,7 +278,7 @@
                     android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:background="@drawable/profile_option_background">
+                    android:background="?android:attr/selectableItemBackground">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -357,7 +334,7 @@
                     android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:background="@drawable/profile_option_background">
+                    android:background="?android:attr/selectableItemBackground">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -413,7 +390,7 @@
                     android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:background="@drawable/profile_option_background">
+                    android:background="?android:attr/selectableItemBackground">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -461,7 +438,7 @@
                     android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:background="@drawable/profile_option_background">
+                    android:background="?android:attr/selectableItemBackground">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -509,7 +486,7 @@
                     android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:background="@drawable/profile_option_background">
+                    android:background="?android:attr/selectableItemBackground">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -557,7 +534,7 @@
                     android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:background="@drawable/profile_option_background">
+                    android:background="?android:attr/selectableItemBackground">
 
                     <ImageView
                         android:layout_width="24dp"
@@ -599,6 +576,10 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:background="?android:attr/selectableItemBackground">
@@ -666,6 +647,10 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:background="?android:attr/selectableItemBackground">
@@ -710,6 +695,10 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal"
                     android:padding="20dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:background="?android:attr/selectableItemBackground">

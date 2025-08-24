@@ -39,16 +39,16 @@ class AllDestinationsActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         
         val destinations = listOf(
-            Destination("Sigiriya, Sri Lanka", "Ancient rock fortress", R.drawable.placeholder_sigiriya, "SigiriyaDetailActivity"),
-            Destination("Kandy, Sri Lanka", "Cultural capital", R.drawable.placeholder_sigiriya, "KandyDetailActivity"),
-            Destination("Galle, Sri Lanka", "Coastal fortress city", R.drawable.placeholder_sigiriya, "GalleDetailActivity"),
-            Destination("Polonnaruwa, Sri Lanka", "Ancient kingdom ruins", R.drawable.placeholder_sigiriya, "PolonnaruwaDetailActivity"),
-            Destination("Anuradhapura, Sri Lanka", "Sacred city", R.drawable.placeholder_sigiriya, "AnuradhapuraDetailActivity"),
-            Destination("Dambulla, Sri Lanka", "Cave temple complex", R.drawable.placeholder_sigiriya, "DambullaDetailActivity"),
-            Destination("Yala, Sri Lanka", "Wildlife sanctuary", R.drawable.placeholder_sigiriya, "YalaDetailActivity"),
-            Destination("Mirissa, Sri Lanka", "Beach paradise", R.drawable.placeholder_sigiriya, "MirissaDetailActivity"),
-            Destination("Ella, Sri Lanka", "Mountain retreat", R.drawable.placeholder_sigiriya, "EllaDetailActivity"),
-            Destination("Nallur, Sri Lanka", "Temple town", R.drawable.placeholder_sigiriya, "NallurDetailActivity")
+            Destination("Sigiriya, Sri Lanka", "Ancient rock fortress", R.drawable.sigiriya, "SigiriyaDetailActivity"),
+            Destination("Kandy, Sri Lanka", "Cultural capital", R.drawable.kandy, "KandyDetailActivity"),
+            Destination("Galle, Sri Lanka", "Coastal fortress city", R.drawable.galle, "GalleDetailActivity"),
+            Destination("Polonnaruwa, Sri Lanka", "Ancient kingdom ruins", R.drawable.polonnaruwa, "PolonnaruwaDetailActivity"),
+            Destination("Anuradhapura, Sri Lanka", "Sacred city", R.drawable.anurathapura, "AnuradhapuraDetailActivity"),
+            Destination("Dambulla, Sri Lanka", "Cave temple complex", R.drawable.dumbulla, "DambullaDetailActivity"),
+            Destination("Yala, Sri Lanka", "Wildlife sanctuary", R.drawable.yalla, "YallaDetailActivity"),
+            Destination("Mirissa, Sri Lanka", "Beach paradise", R.drawable.mirissa, "MirissaDetailActivity"),
+            Destination("Ella, Sri Lanka", "Mountain retreat", R.drawable.ella, "EllaDetailActivity"),
+            Destination("Nallur, Sri Lanka", "Temple town", R.drawable.nallur, "NallurDetailActivity")
         )
         
         val adapter = DestinationsAdapter(destinations) { destination ->

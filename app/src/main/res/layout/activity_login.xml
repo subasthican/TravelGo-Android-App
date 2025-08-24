@@ -26,7 +26,7 @@
             android:layout_marginTop="24dp"
             android:text="@string/login_title"
             android:textColor="@color/white"
-            android:textSize="28sp"
+            android:textSize="32sp"
             android:textStyle="bold" />
 
         <TextView
@@ -37,34 +37,43 @@
             android:textColor="@color/white"
             android:textSize="16sp" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Welcome back! Please sign in to continue"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:alpha="0.9" />
+
     </LinearLayout>
 
-    <!-- Form Container with Border -->
+    <!-- Form Container with CardView -->
     <LinearLayout
         android:id="@+id/form_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/element_border"
+        android:background="@drawable/card_background"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="32dp">
 
         <!-- Email Field -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/email_hint"
-            android:textColor="@color/white"
+            android:textColor="@color/text_primary"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/email_edit_text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/edittext_background"
+            android:background="@drawable/edittext_border_background"
             android:hint="Enter your email"
             android:inputType="textEmailAddress"
             android:padding="16dp"
@@ -77,35 +86,32 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/password_hint"
-            android:textColor="@color/white"
+            android:textColor="@color/text_primary"
             android:textSize="16sp" />
 
         <EditText
             android:id="@+id/password_edit_text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="56dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/edittext_background"
+            android:background="@drawable/edittext_border_background"
             android:hint="Enter your password"
             android:inputType="textPassword"
             android:padding="16dp"
             android:textColor="@color/text_primary"
             android:textColorHint="@color/text_secondary" />
 
-        <!-- Forgot Password -->
-        <TextView
-            android:id="@+id/tv_forgot_password"
+        <!-- Forgot Password Button -->
+        <Button
+            android:id="@+id/forgot_password_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginTop="16dp"
+            android:backgroundTint="@android:color/transparent"
             android:text="@string/forgot_password"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:clickable="true"
-            android:focusable="true"
-            android:background="?android:attr/selectableItemBackground"
-            android:padding="8dp" />
+            android:textColor="@color/primary"
+            android:textSize="14sp" />
 
         <!-- Login Button -->
         <Button
@@ -126,7 +132,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:text="@string/register_link"
-            android:textColor="@color/white"
+            android:textColor="@color/primary"
             android:textSize="14sp"
             android:clickable="true"
             android:focusable="true"

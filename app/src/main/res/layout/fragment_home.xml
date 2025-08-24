@@ -5,54 +5,25 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_blue_gradient">
 
-    <!-- Header with Logo and Profile -->
+    <!-- Header with Logo Only -->
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="24dp"
+        android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <!-- Logo -->
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:gravity="center_vertical">
-
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="40dp"
-                android:src="@drawable/logo"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true" />
-
-        </LinearLayout>
-
-        <!-- Profile Icon -->
-        <LinearLayout
-            android:id="@+id/profile_logo_button"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:background="@drawable/circle_orange"
-            android:gravity="center"
-            android:clickable="true"
-            android:focusable="true"
-            android:elevation="4dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="MER"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true" />
 
     </LinearLayout>
 
@@ -267,6 +238,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/filter_section"
         app:layout_constraintVertical_bias="1.0" />
+
+    <!-- Floating AI Chat Button -->
+    <LinearLayout
+        android:id="@+id/ai_chat_button"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/circle_orange"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_chat"
+            android:tint="@color/white"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
