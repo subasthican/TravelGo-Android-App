@@ -17,12 +17,12 @@ class CurrencySettingsActivity : AppCompatActivity() {
         val currencyRadioGroup = findViewById<RadioGroup>(R.id.currency_radio_group)
         val saveButton = findViewById<Button>(R.id.save_button)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Save button
+
         saveButton.setOnClickListener {
             val selectedId = currencyRadioGroup.checkedRadioButtonId
             if (selectedId != -1) {

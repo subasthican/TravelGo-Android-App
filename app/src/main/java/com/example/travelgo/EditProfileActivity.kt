@@ -16,19 +16,19 @@ class EditProfileActivity : AppCompatActivity() {
         val changePhotoButton = findViewById<Button>(R.id.change_photo_button)
         val saveButton = findViewById<Button>(R.id.save_button)
         
-        // Back button - just go back
+
         backButton.setOnClickListener {
             finish()
         }
         
 
         
-        // Change photo button - simple message
+
         changePhotoButton.setOnClickListener {
             Toast.makeText(this, "Photo change feature coming soon!", Toast.LENGTH_SHORT).show()
         }
         
-        // Primary save button - simple save
+
         saveButton.setOnClickListener {
             Toast.makeText(this, "Profile saved successfully! ✓", Toast.LENGTH_SHORT).show()
             finish()

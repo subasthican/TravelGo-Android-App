@@ -2,28 +2,26 @@
 <resources>
     <string name="app_name">TravelGo</string>
 
-    <!-- Navigation Labels -->
+
     <string name="nav_home">Home</string>
     <string name="nav_history">History</string>
     <string name="nav_send">Send</string>
     <string name="nav_profile">Profile</string>
 
-    <!-- Splash Screen -->
+
     <string name="splash_title">Travelgo</string>
     <string name="splash_subtitle">Find Your Next Adventure! With Us</string>
 
-    <!-- Onboarding -->
+
     <string name="onboarding_title_1">Plan Your Journey</string>
     <string name="onboarding_desc_1">Create detailed itineraries and organize your travel plans with ease</string>
     <string name="onboarding_title_2">Discover Places</string>
     <string name="onboarding_desc_2">Find amazing attractions, restaurants, and hidden gems at your destination</string>
     <string name="onboarding_title_3">Track Memories</string>
     <string name="onboarding_desc_3">Capture and organize your travel photos and experiences</string>
-    <string name="onboarding_skip">Skip</string>
-    <string name="onboarding_next">Next</string>
     <string name="onboarding_start">Get Started</string>
 
-    <!-- Login/Registration -->
+
     <string name="login_title">Welcome Back</string>
     <string name="login_subtitle">Sign in to continue your journey</string>
     <string name="email_hint">Email Address</string>
@@ -32,21 +30,18 @@
     <string name="register_link">Don\'t have an account? Sign Up</string>
     <string name="forgot_password">Forgot Password?</string>
 
-    <!-- Home Screen -->
+
     <string name="home_greeting">Hi, Subasthican 👋</string>
     <string name="home_subtitle">Explore the world</string>
     <string name="search_hint">Search places</string>
-    <string name="popular_places">Popular places</string>
-    <string name="view_all">View all</string>
     <string name="filter_most_viewed">Most Viewed</string>
     <string name="filter_nearby">Nearby</string>
     <string name="filter_latest">Latest</string>
     <string name="sigiriya_title">Sigiriya, Srilanka</string>
-    <string name="sigiriya_location">Sigiriya, Sri Lanka</string>
     <string name="nallur_title">Nallur, Sril</string>
     <string name="nallur_location">Jaffna, Sri Lanka</string>
 
-    <!-- Details Page -->
+
     <string name="details_overview">Overview</string>
     <string name="details_details">Details</string>
     <string name="details_duration">3 hours</string>
@@ -66,7 +61,7 @@
     <string name="weather_title">Weather</string>
     <string name="budget_title">Budget</string>
 
-    <!-- Explore Screen -->
+
     <string name="explore_title">Explore Destinations</string>
     <string name="search_placeholder">Search places, attractions...</string>
     <string name="popular_destinations">Popular Destinations</string>
@@ -75,7 +70,7 @@
     <string name="hotels">Hotels</string>
     <string name="activities">Activities</string>
 
-    <!-- Itinerary Screen -->
+
     <string name="itinerary_title">My Itinerary</string>
     <string name="add_day">Add Day</string>
     <string name="add_activity">Add Activity</string>
@@ -87,7 +82,7 @@
     <string name="cancel">Cancel</string>
     <string name="delete">Delete</string>
 
-    <!-- Profile Screen -->
+
     <string name="profile_title">My Profile</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="personal_info">Personal Information</string>
@@ -102,8 +97,6 @@
     <string name="help_support">Help &amp; Support</string>
     <string name="logout">Logout</string>
 
-    <!-- Common Actions -->
-    <string name="add">Add</string>
     <string name="edit">Edit</string>
     <string name="view">View</string>
     <string name="share">Share</string>
@@ -113,19 +106,287 @@
     <string name="call">Call</string>
     <string name="directions">Directions</string>
 
-    <!-- Placeholder Text -->
+
     <string name="no_trips_yet">No trips planned yet</string>
     <string name="no_photos_yet">No photos yet</string>
     <string name="no_expenses_yet">No expenses recorded</string>
     <string name="start_planning">Start planning your first trip!</string>
 
-    <!-- Error Messages -->
+
     <string name="error_network">Network error. Please check your connection.</string>
     <string name="error_general">Something went wrong. Please try again.</string>
     <string name="error_invalid_input">Please check your input and try again.</string>
 
-    <!-- Success Messages -->
+
     <string name="success_saved">Successfully saved!</string>
     <string name="success_updated">Successfully updated!</string>
     <string name="success_deleted">Successfully deleted!</string>
+    
+
+    <string name="hello_subasthican">Hello Subasthican</string>
+    <string name="where_do_you_want_to_go">Where do you want to go?</string>
+    <string name="search_places">Search places</string>
+    <string name="popular_places">Popular places</string>
+    <string name="view_all">View all</string>
+    <string name="filter_all">All</string>
+    <string name="filter_beach">Beach</string>
+    <string name="filter_mountain">Mountain</string>
+    <string name="filter_city">City</string>
+    <string name="popular_places_title">Popular Places</string>
+    <string name="nearest_places_title">Nearest Places</string>
+    <string name="go_to_favorites">Go to Favorites</string>
+    
+
+    <string name="all_destinations">All Destinations</string>
+    
+
+    <string name="recently_seen">Recently Seen</string>
+    <string name="recently_viewed_destinations">Your recently viewed destinations</string>
+    <string name="seen_minute_ago">Seen a minute ago</string>
+    <string name="seen_hour_ago">Seen an hour ago</string>
+    
+
+    <string name="day_1_arrival">Day 1 - Arrival</string>
+    <string name="time_09_00">09:00</string>
+    <string name="airport_pickup">Airport Pickup</string>
+    <string name="time_11_00">11:00</string>
+    <string name="hotel_checkin">Hotel Check-in</string>
+    <string name="time_14_00">14:00</string>
+    <string name="city_tour">City Tour</string>
+    
+
+    <string name="discover_amazing_places">Discover Amazing Places</string>
+    <string name="explore_beautiful_destinations">Explore beautiful destinations around Sri Lanka with our carefully curated travel experiences</string>
+    
+
+    <string name="create_account">Create Account</string>
+    <string name="join_travelgo">Join TravelGo and start your journey</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="create_account_button">Create Account</string>
+    <string name="already_have_account">Already have an account? Sign in</string>
+    
+
+    <string name="language_settings">Language Settings</string>
+    <string name="select_language">Select Language</string>
+    <string name="tamil">தமிழ் - Tamil</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="german">German</string>
+    <string name="chinese">Chinese</string>
+    <string name="japanese">Japanese</string>
+    <string name="save_changes">Save Changes</string>
+    
+
+    <string name="verification">Verification</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="next">Next</string>
+    
+
+    <string name="add_payment">Add Payment</string>
+    <string name="g_pay">G Pay</string>
+    <string name="pay">Pay</string>
+    <string name="scan_card">Scan Card</string>
+    <string name="name_on_card">Name On Card</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="security_code">Security Code</string>
+    <string name="zip_postal_code">ZIP/Postal Code</string>
+    <string name="add">Add</string>
+    
+
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="cvv">CVV</string>
+    <string name="card_info_secure">🔒 Your card information is secure and encrypted</string>
+    
+
+    <string name="about_travelgo">About TravelGo</string>
+    <string name="version_1_0_0">Version 1.0.0</string>
+    <string name="about_description">Your ultimate travel companion for discovering amazing destinations around the world.</string>
+    <string name="features">Features</string>
+    <string name="feature_discover">• Discover amazing destinations</string>
+    <string name="feature_book">• Book your travel experiences</string>
+    <string name="feature_save">• Save your favorite places</string>
+    <string name="feature_track">• Track your travel history</string>
+    <string name="legal">Legal</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="open_source_licenses">Open Source Licenses</string>
+    <string name="copyright_2024">© 2024 TravelGo. All rights reserved.</string>
+    
+
+    <string name="john_traveler">John Traveler</string>
+    <string name="john_email">john.traveler@email.com</string>
+    <string name="phone_number_format">+1 (555) 123-4567</string>
+    <string name="birth_date">January 15, 1990</string>
+    <string name="currency_usd">USD ($)</string>
+    
+
+    <string name="sigiriya_location">Sigiriya, Central Province, Sri Lanka</string>
+    <string name="rating">Rating</string>
+    <string name="duration">Duration</string>
+    <string name="entry_fee">Entry Fee</string>
+    <string name="rs_5000">Rs 5000</string>
+
+    <string name="showing_all_destinations">Showing All destinations</string>
+    <string name="showing_beach_destinations">Showing Beach destinations</string>
+    <string name="showing_mountain_destinations">Showing Mountain destinations</string>
+    <string name="showing_city_destinations">Showing City destinations</string>
+    <string name="added_to_favorites">Added to favorites</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+    <string name="removed_from_saved_items">Removed from saved items</string>
+    <string name="saved_items_loaded">Saved items page loaded with sample data</string>
+    <string name="payment_successful">Payment successful for %1$s!</string>
+    <string name="paid_with">Paid with: %1$s</string>
+    <string name="adults_count">%1$d Adults</string>
+    <string name="selected_method">Selected: %1$s</string>
+    <string name="processing">Processing...</string>
+    
+
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_get_started">Get Started</string>
+    <string name="onboarding_discover_title">Discover Amazing Places</string>
+    <string name="onboarding_discover_description">Explore beautiful destinations around Sri Lanka with our carefully curated travel experiences</string>
+    <string name="onboarding_plan_title">Plan Your Perfect Trip</string>
+    <string name="onboarding_plan_description">Create personalized itineraries and book your dream vacation with just a few taps</string>
+    <string name="onboarding_confidence_title">Travel with Confidence</string>
+    <string name="onboarding_confidence_description">Safe, secure, and hassle-free travel planning with 24/7 customer support</string>
+    
+
+    <string name="booked_packages_title">Booked Packages</string>
+    <string name="booked_packages_subtitle">Your upcoming and completed trips</string>
+    
+
+    <string name="number_of_persons">Number of Persons</string>
+    <string name="sigiriya_adventure">Sigiriya Adventure</string>
+    <string name="how_many_traveling">How many people are traveling?</string>
+    <string name="select_people_count">Select how many people are traveling</string>
+    <string name="next_to_location">Next to Location</string>
+    
+
+    <string name="welcome_back_signin">Welcome back! Please sign in to continue</string>
+    
+
+    <string name="sigiriya">Sigiriya</string>
+    <string name="ancient_rock_fortress">Ancient Rock Fortress</string>
+    <string name="sigiriya_central_province">Sigiriya, Central Province, Sri Lanka</string>
+    <string name="entry_fee_rs_5000">Rs 5000</string>
+    <string name="sigiriya_description">Sigiriya, also known as the Lion Rock, is an ancient palace and fortress complex located in the central Matale District of Sri Lanka. This UNESCO World Heritage site is one of the most dramatic and impressive archaeological sites in Asia.</string>
+    <string name="highlights">Highlights</string>
+    <string name="ancient_palace_ruins">• Ancient palace ruins and fortress walls</string>
+    <string name="sigiriya_frescoes">• Stunning Sigiriya frescoes (ancient paintings)</string>
+    <string name="lion_gate_entrance">• Lion Gate entrance with massive lion paws</string>
+    <string name="panoramic_views">• Panoramic views from the summit</string>
+    <string name="ancient_water_gardens">• Ancient water gardens and moats</string>
+    <string name="mirror_wall">• Mirror Wall with ancient graffiti</string>
+    <string name="best_time_to_visit">Best Time to Visit</string>
+    <string name="best_time_description">The best time to visit Sigiriya is during the dry season from January to April and July to September. Early morning visits (6:00 AM - 9:00 AM) are recommended to avoid the heat and crowds.</string>
+    <string name="book_sigiriya_tour">Book Sigiriya Tour</string>
+    
+
+    <string name="verification_title">Verification</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="verification_code_sent">We\'ve sent a 4-digit code to your email address</string>
+    <string name="verification_code_hint">Verification Code</string>
+    <string name="didnt_receive_code">Didn\'t receive the code? Resend</string>
+    <string name="next_button">Next</string>
+    
+
+    <string name="ai_travel_suggestions">AI Travel Suggestions</string>
+    <string name="ai_suggestions_description">Based on your chat, here are some amazing destinations:</string>
+    <string name="nallur_jaffna">Nallur, Jaffna</string>
+    <string name="srilanka_northern">SRILANKA | NORTHERN</string>
+    <string name="sigiriya_srilanka">Sigiriya, Sri Lanka</string>
+    <string name="srilanka_central">SRILANKA | CENTRAL</string>
+    <string name="kandy_srilanka">Kandy, Sri Lanka</string>
+    
+
+    <string name="payment_successful_title">Payment Successful! 🎉</string>
+    <string name="payment_successful_message">Payment successful for your trip!</string>
+    <string name="paid_with_selected">Paid with: Selected payment method</string>
+    <string name="booking_confirmed">Booking Confirmed</string>
+    <string name="booking_confirmed_message">✅ Your booking has been confirmed</string>
+    <string name="payment_processed">✅ Payment has been processed</string>
+    <string name="confirmation_email_sent">✅ Confirmation email sent</string>
+    <string name="ready_for_adventure">✅ Ready for your adventure!</string>
+    <string name="continue_to_home">Continue to Home</string>
+    
+
+    <string name="set_location">Set Location</string>
+    <string name="pickup_location_set">Pickup Location Set</string>
+    <string name="colombo_airport">Colombo International Airport, Sri Lanka</string>
+    <string name="pickup_location_auto_set">Your pickup location has been automatically set</string>
+    <string name="next_to_payment">Next to Payment</string>
+    
+
+    <string name="language_settings_title">Language Settings</string>
+    <string name="select_language_hint">Select Language</string>
+    <string name="tamil_language">தமிழ் - Tamil</string>
+    <string name="english_language">English</string>
+    <string name="spanish_language">Spanish</string>
+    <string name="french_language">French</string>
+    <string name="german_language">German</string>
+    
+
+    <string name="payment_title">Payment</string>
+    <string name="select_payment_method">Please select a payment method</string>
+    <string name="apple_id">Apple ID</string>
+    <string name="balance_pkr">Balance: PKR2,6000</string>
+    <string name="master_card">Master Card</string>
+    <string name="card_number_masked">****6356</string>
+    <string name="visa_card">VISA</string>
+    <string name="visa">Visa</string>
+    <string name="visa_number_masked">****5645</string>
+    <string name="add_payment_method">Add Payment Method</string>
+    
+
+    <string name="hi_subasthican">Hi, Subasthican 👋</string>
+    <string name="manage_profile_preferences">Manage your profile &amp; preferences</string>
+    <string name="subasthican_name">Subasthican</string>
+    <string name="subasthican_email">subasthican@email.com</string>
+    <string name="edit_button">Edit</string>
+    <string name="settings_preferences">Settings &amp; Preferences</string>
+    <string name="favourites_title">Favourites</string>
+    <string name="saved_title">Saved</string>
+    <string name="language_title">Language</string>
+    <string name="english_current">English</string>
+    <string name="currency_title">Currency</string>
+    <string name="usd_currency">USD</string>
+    <string name="notifications_title">Notifications</string>
+    <string name="privacy_security_title">Privacy &amp; Security</string>
+    <string name="help_support_title">Help &amp; Support</string>
+    <string name="about_travelgo_title">About TravelGo</string>
+    <string name="clear_cache_title">Clear Cache</string>
+    <string name="cleared_status">Cleared</string>
+    <string name="clear_history_title">Clear History</string>
+    <string name="log_out_title">Log Out</string>
+    <string name="travelgo_version">TravelGo v1.0.0</string>
+    
+
+    <string name="ai_travel_assistant">AI Travel Assistant</string>
+    <string name="ai_welcome_message">Hi! I\'m your AI Travel Assistant. Tell me what kind of experience you\'re looking for in Sri Lanka - beaches, mountains, culture, wildlife, adventure, or something else?</string>
+    <string name="see_travel_suggestions">See Travel Suggestions</string>
+    
+
+    <string name="ella">Ella</string>
+    <string name="hill_country_gem">Hill Country Gem</string>
+    <string name="uva_province_sri_lanka">Uva Province, Sri Lanka</string>
+    <string name="rating_4_7">4.7</string>
+    <string name="rating_4_8">4.8</string>
+    <string name="rating_4_6">4.6</string>
+    <string name="rating_4_5">4.5</string>
+    <string name="duration_3_4_hrs">3-4 hrs</string>
+    <string name="about_sigiriya">About Sigiriya</string>
+    <string name="fill_details_get_started">Fill in your details to get started</string>
+    <string name="currency_settings">Currency Settings</string>
+    <string name="select_currency">Select Currency</string>
+    
+
+    <string name="continue_to_payment">CONTINUE TO PAYMENT</string>
+    
 </resources>

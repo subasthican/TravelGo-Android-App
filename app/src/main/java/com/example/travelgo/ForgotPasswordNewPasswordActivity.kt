@@ -20,16 +20,16 @@ class ForgotPasswordNewPasswordActivity : AppCompatActivity() {
         val passwordInput = findViewById<EditText>(R.id.password_input)
         val confirmPasswordInput = findViewById<EditText>(R.id.confirm_password_input)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Complete button - show success and go back to login
+
         completeButton.setOnClickListener {
             Toast.makeText(this, "Password reset successful! Please login with your new password", Toast.LENGTH_LONG).show()
             
-            // Go back to login
+
             val intent = Intent(this, LoginActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)

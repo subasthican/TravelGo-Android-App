@@ -24,16 +24,16 @@ class AnuradhapuraDetailActivity : AppCompatActivity() {
         
         // Bookmark button
         bookmarkButton.setOnClickListener {
-            Toast.makeText(this, "Anuradhapura added to favorites! ❤️", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SavedItemsActivity::class.java)
+            startActivity(intent)
         }
         
 
         
-        // Book Now button
+
         bookNowButton.setOnClickListener {
-            val intent = Intent(this, BookingMembersActivity::class.java)
+            val intent = Intent(this, PersonCountActivity::class.java)
             intent.putExtra("destination", "Anuradhapura")
-            intent.putExtra("destination_type", "Cultural Heritage")
             startActivity(intent)
         }
         

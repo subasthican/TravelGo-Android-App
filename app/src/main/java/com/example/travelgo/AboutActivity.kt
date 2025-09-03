@@ -16,22 +16,22 @@ class AboutActivity : AppCompatActivity() {
         val privacyPolicyOption = findViewById<LinearLayout>(R.id.privacy_policy_option)
         val licensesOption = findViewById<LinearLayout>(R.id.licenses_option)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Terms of Service option
+
         termsOption.setOnClickListener {
             Toast.makeText(this, "Terms of Service coming soon!", Toast.LENGTH_SHORT).show()
         }
         
-        // Privacy Policy option
+
         privacyPolicyOption.setOnClickListener {
             Toast.makeText(this, "Privacy Policy coming soon!", Toast.LENGTH_SHORT).show()
         }
         
-        // Licenses option
+
         licensesOption.setOnClickListener {
             Toast.makeText(this, "Open Source Licenses coming soon!", Toast.LENGTH_SHORT).show()
         }

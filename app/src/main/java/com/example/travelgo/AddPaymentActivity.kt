@@ -20,21 +20,21 @@ class AddPaymentActivity : AppCompatActivity() {
         val backButton = findViewById<ImageButton>(R.id.back_button)
         val addButton = findViewById<Button>(R.id.add_button)
         
-        // Get destination info from previous activity
+
         val destination = intent.getStringExtra("destination") ?: "your trip"
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Set up payment method selection
+
         setupPaymentMethodSelection()
         
-        // Set up scan card functionality
+
         setupScanCard()
         
-        // Set up add button
+
         setupAddButton(addButton, destination)
     }
     
@@ -62,14 +62,14 @@ class AddPaymentActivity : AppCompatActivity() {
     }
     
     private fun selectPaymentMethod(methodName: String, selectedButton: CardView) {
-        // Clear previous selection
+
         clearAllSelections()
         
-        // Set new selection
+
         selectedPaymentMethod = methodName
         selectedButton.setBackgroundResource(R.drawable.filter_button_selected)
         
-        // Show selection confirmation
+
         Toast.makeText(this, "$methodName selected", Toast.LENGTH_SHORT).show()
     }
     
@@ -90,17 +90,17 @@ class AddPaymentActivity : AppCompatActivity() {
         val scanCardLayout = findViewById<LinearLayout>(R.id.scan_card_layout)
         scanCardLayout.setOnClickListener {
             Toast.makeText(this, "Scan Card feature coming soon! 📱", Toast.LENGTH_SHORT).show()
-            // Here you would implement camera-based card scanning
+
         }
     }
     
     private fun setupAddButton(addButton: Button, destination: String) {
         addButton.setOnClickListener {
             if (validateInputs()) {
-                // Process the new payment method
+
                 Toast.makeText(this, "Payment method added successfully! ✅", Toast.LENGTH_SHORT).show()
                 
-                // Return to previous screen
+
                 finish()
             } else {
                 Toast.makeText(this, "Please fill all required fields", Toast.LENGTH_SHORT).show()
@@ -114,8 +114,7 @@ class AddPaymentActivity : AppCompatActivity() {
         val expiryDate = findViewById<EditText>(R.id.expiry_date_input).text.toString()
         val securityCode = findViewById<EditText>(R.id.security_code_input).text.toString()
         val zipCode = findViewById<EditText>(R.id.zip_code_input).text.toString()
-        
-        // Check if all fields are filled
+
         if (nameOnCard.isEmpty()) {
             findViewById<EditText>(R.id.name_on_card_input).error = "Name is required"
             return false

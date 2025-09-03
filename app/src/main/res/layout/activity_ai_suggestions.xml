@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:background="@drawable/splash_blue_gradient">
 
-    <!-- Header -->
+
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -14,7 +14,7 @@
         android:padding="24dp"
         android:gravity="center_vertical">
 
-        <!-- Back Button -->
+
         <ImageView
             android:id="@+id/back_button"
             android:layout_width="48dp"
@@ -26,25 +26,25 @@
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:padding="12dp" />
 
-        <!-- Title -->
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="AI Travel Suggestions"
+            android:text="@string/ai_travel_suggestions"
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
             android:gravity="center" />
 
-        <!-- Placeholder for alignment -->
+
         <View
             android:layout_width="48dp"
             android:layout_height="48dp" />
 
     </LinearLayout>
 
-    <!-- Content Container -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -57,24 +57,24 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <!-- Welcome Message -->
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Based on your chat, here are some amazing destinations:"
+            android:text="@string/ai_suggestions_description"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginBottom="24dp" />
 
-        <!-- Destination Suggestions -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- Nallur Suggestion -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
                 android:layout_marginBottom="16dp"
                 android:gravity="center_vertical">
 
-                <!-- Destination Image -->
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="60dp"
@@ -93,7 +93,7 @@
                     android:background="@drawable/image_placeholder_background"
                     android:layout_marginEnd="16dp" />
 
-                <!-- Destination Info -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -118,7 +118,7 @@
 
                 </LinearLayout>
 
-                <!-- Favorite Button -->
+
                 <ImageView
                     android:id="@+id/favorite_button_1"
                     android:layout_width="32dp"
@@ -130,7 +130,7 @@
                     android:focusable="true"
                     android:padding="4dp" />
 
-                <!-- View Details Button -->
+
                 <ImageView
                     android:id="@+id/view_details_button_1"
                     android:layout_width="32dp"
@@ -145,7 +145,7 @@
 
             </LinearLayout>
 
-            <!-- Sigiriya Suggestion -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -155,7 +155,7 @@
                 android:layout_marginBottom="16dp"
                 android:gravity="center_vertical">
 
-                <!-- Destination Image -->
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="60dp"
@@ -164,7 +164,7 @@
                     android:background="@drawable/image_placeholder_background"
                     android:layout_marginEnd="16dp" />
 
-                <!-- Destination Info -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -189,7 +189,7 @@
 
                 </LinearLayout>
 
-                <!-- Favorite Button -->
+
                 <ImageView
                     android:id="@+id/favorite_button_2"
                     android:layout_width="32dp"
@@ -201,7 +201,7 @@
                     android:focusable="true"
                     android:padding="4dp" />
 
-                <!-- View Details Button -->
+
                 <ImageView
                     android:id="@+id/view_details_button_2"
                     android:layout_width="32dp"
@@ -216,7 +216,7 @@
 
             </LinearLayout>
 
-            <!-- Kandy Suggestion -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -226,7 +226,7 @@
                 android:layout_marginBottom="16dp"
                 android:gravity="center_vertical">
 
-                <!-- Destination Image -->
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="60dp"
@@ -235,7 +235,7 @@
                     android:background="@drawable/image_placeholder_background"
                     android:layout_marginEnd="16dp" />
 
-                <!-- Destination Info -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -260,7 +260,7 @@
 
                 </LinearLayout>
 
-                <!-- Favorite Button -->
+
                 <ImageView
                     android:id="@+id/favorite_button_3"
                     android:layout_width="32dp"
@@ -272,7 +272,7 @@
                     android:focusable="true"
                     android:padding="4dp" />
 
-                <!-- View Details Button -->
+
                 <ImageView
                     android:id="@+id/view_details_button_3"
                     android:layout_width="32dp"
@@ -291,7 +291,7 @@
 
     </LinearLayout>
 
-    <!-- Home Icon at Bottom -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -300,11 +300,16 @@
         android:padding="24dp">
 
         <ImageView
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:id="@+id/home_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:src="@drawable/ic_home"
             android:tint="@color/white"
-            android:scaleType="fitCenter" />
+            android:scaleType="fitCenter"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:padding="8dp" />
 
     </LinearLayout>
 

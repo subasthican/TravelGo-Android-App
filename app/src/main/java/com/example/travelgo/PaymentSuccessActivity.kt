@@ -15,24 +15,24 @@ class PaymentSuccessActivity : AppCompatActivity() {
         val destination = intent.getStringExtra("destination") ?: "your trip"
         val paymentMethod = intent.getStringExtra("payment_method") ?: "selected payment method"
         
-        // Set success message with destination details
+
         val successMessage = findViewById<TextView>(R.id.success_message)
         successMessage.text = "Payment successful for $destination!"
         
         val paymentMethodText = findViewById<TextView>(R.id.payment_method_text)
         paymentMethodText.text = "Paid with: $paymentMethod"
         
-        // Set up continue button
+
         val continueButton = findViewById<Button>(R.id.continue_button)
         continueButton.setOnClickListener {
-            // Navigate back to main activity
-            val intent = Intent(this, MainActivity::class.java)
+
+            val intent = Intent(this, HomeActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
             finish()
         }
         
-        // Show success animation or message
+
         val successIcon = findViewById<ImageView>(R.id.success_icon)
         successIcon.alpha = 0f
         successIcon.animate()

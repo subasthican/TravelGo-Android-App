@@ -7,14 +7,14 @@
     android:background="@drawable/splash_blue_gradient"
     android:padding="24dp">
 
-    <!-- Header Section -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginBottom="32dp">
 
-        <!-- Back Button -->
+
         <ImageButton
             android:id="@+id/back_button"
             android:layout_width="48dp"
@@ -25,7 +25,7 @@
             android:tint="@color/white"
             android:layout_marginBottom="16dp" />
 
-        <!-- Title -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,14 +36,14 @@
 
     </LinearLayout>
 
-    <!-- Payment Method Options -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginBottom="32dp">
 
-        <!-- Google Pay Button -->
+
         <androidx.cardview.widget.CardView
             android:id="@+id/gpay_button"
             android:layout_width="0dp"
@@ -71,7 +71,7 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Apple Pay Button -->
+
         <androidx.cardview.widget.CardView
             android:id="@+id/apple_pay_button"
             android:layout_width="0dp"
@@ -100,7 +100,7 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Mastercard Button -->
+
         <androidx.cardview.widget.CardView
             android:id="@+id/mastercard_button"
             android:layout_width="0dp"
@@ -118,7 +118,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
 
-                <!-- Mastercard Logo -->
+
                 <LinearLayout
                     android:layout_width="32dp"
                     android:layout_height="32dp"
@@ -141,7 +141,7 @@
 
         </androidx.cardview.widget.CardView>
 
-        <!-- Visa Button -->
+
         <androidx.cardview.widget.CardView
             android:id="@+id/visa_button"
             android:layout_width="0dp"
@@ -171,7 +171,7 @@
 
     </LinearLayout>
 
-    <!-- Scan Card Feature -->
+
     <LinearLayout
         android:id="@+id/scan_card_layout"
         android:layout_width="wrap_content"
@@ -183,7 +183,7 @@
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:layout_marginBottom="32dp">
 
-        <!-- Scan Icon -->
+
         <ImageView
             android:layout_width="24dp"
             android:layout_height="24dp"
@@ -191,7 +191,7 @@
             android:tint="@color/primary_light"
             android:layout_marginEnd="8dp" />
 
-        <!-- Scan Text -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -202,14 +202,14 @@
 
     </LinearLayout>
 
-    <!-- Card Details Input Fields -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <!-- Name On Card -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -230,7 +230,7 @@
             android:padding="16dp"
             android:layout_marginBottom="24dp" />
 
-        <!-- Card Number -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -252,14 +252,14 @@
             android:padding="16dp"
             android:layout_marginBottom="24dp" />
 
-        <!-- Expiry Date and Security Code Row -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:layout_marginBottom="24dp">
 
-            <!-- Expiry Date -->
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -288,7 +288,7 @@
                     android:padding="16dp" />
             </LinearLayout>
 
-            <!-- Security Code -->
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -319,7 +319,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- ZIP/Postal Code -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -343,7 +343,7 @@
 
     </LinearLayout>
 
-    <!-- Add Button -->
+
     <Button
         android:id="@+id/add_button"
         android:layout_width="match_parent"

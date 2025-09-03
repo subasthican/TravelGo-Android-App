@@ -1,16 +1,18 @@
 package com.example.travelgo
 
+import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageButton
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Toast
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.LinearLayout
+import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 class BookedPackagesActivity : AppCompatActivity() {
     
@@ -18,19 +20,13 @@ class BookedPackagesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_booked_packages)
         
-        val backButton = findViewById<ImageButton>(R.id.back_button)
-        val titleText = findViewById<TextView>(R.id.title_text)
+
         
-        // Set title
-        titleText.text = "Booked Packages"
-        
-        // Back button
-        backButton.setOnClickListener {
-            finish()
-        }
-        
-        // Set up booked packages list
+
         setupBookedPackagesList()
+        
+
+        setupBottomNavigation()
     }
     
     private fun setupBookedPackagesList() {
@@ -38,9 +34,9 @@ class BookedPackagesActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         
         val bookedPackages = listOf(
-            BookedPackage("Sigiriya Adventure", "Booked on: 15 Dec 2024", "Status: Confirmed", R.drawable.placeholder_sigiriya),
-            BookedPackage("Kandy Cultural Tour", "Booked on: 12 Dec 2024", "Status: Confirmed", R.drawable.placeholder_sigiriya),
-            BookedPackage("Galle Fort Experience", "Booked on: 10 Dec 2024", "Status: Confirmed", R.drawable.placeholder_sigiriya)
+            BookedPackage("Sigiriya Adventure", "Booked on: 15 Dec 2024", "Status: Confirmed", R.drawable.kandy),
+            BookedPackage("Kandy Cultural Tour", "Booked on: 12 Dec 2024", "Status: Confirmed", R.drawable.kandy),
+            BookedPackage("Galle Fort Experience", "Booked on: 10 Dec 2024", "Status: Confirmed", R.drawable.galle)
         )
         
         val adapter = BookedPackagesAdapter(bookedPackages)
@@ -83,5 +79,35 @@ class BookedPackagesActivity : AppCompatActivity() {
                 status.text = bookedPackage.status
             }
         }
+    }
+    
+    private fun setupBottomNavigation() {
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNav.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> {
+                    val intent = Intent(this, HomeActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_history -> {
+                    val intent = Intent(this, HistoryActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.nav_booked_packages -> {
+
+                    true
+                }
+                R.id.nav_profile -> {
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                else -> false
+            }
+        }
+        
+        bottomNav.selectedItemId = R.id.nav_booked_packages
     }
 }

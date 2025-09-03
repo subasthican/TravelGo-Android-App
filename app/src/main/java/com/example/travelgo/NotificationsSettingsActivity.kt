@@ -19,18 +19,18 @@ class NotificationsSettingsActivity : AppCompatActivity() {
         val promotionalSwitch = findViewById<Switch>(R.id.promotional_switch)
         val saveButton = findViewById<Button>(R.id.save_button)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Save button
+
         saveButton.setOnClickListener {
             Toast.makeText(this, "Notification settings saved!", Toast.LENGTH_SHORT).show()
             finish()
         }
         
-        // Set default values
+
         pushNotificationsSwitch.isChecked = true
         emailNotificationsSwitch.isChecked = true
         bookingUpdatesSwitch.isChecked = true

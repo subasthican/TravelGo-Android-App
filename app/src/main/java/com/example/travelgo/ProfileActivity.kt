@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
@@ -15,7 +16,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
         
-        // Initialize views
+
         val editProfileButton = findViewById<Button>(R.id.edit_profile_button)
         val favouritesOption = findViewById<LinearLayout>(R.id.favourites_option)
         val savedOption = findViewById<LinearLayout>(R.id.saved_option)
@@ -28,52 +29,45 @@ class ProfileActivity : AppCompatActivity() {
         val clearCacheOption = findViewById<LinearLayout>(R.id.clear_cache_option)
         val clearHistoryOption = findViewById<LinearLayout>(R.id.clear_history_option)
         val logoutOption = findViewById<LinearLayout>(R.id.logout_option)
+        
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         
         // Set up bottom navigation
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    // Navigate to MainActivity (home)
-                    val intent = Intent(this, MainActivity::class.java)
-                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    val intent = Intent(this, HomeActivity::class.java)
                     startActivity(intent)
                     true
                 }
                 R.id.nav_history -> {
-                    // Navigate to MainActivity with history tab
-                    val intent = Intent(this, MainActivity::class.java)
-                    intent.putExtra("selected_tab", "history")
-                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    val intent = Intent(this, HistoryActivity::class.java)
                     startActivity(intent)
                     true
                 }
                 R.id.nav_booked_packages -> {
-                    // Navigate to MainActivity with booked packages tab
-                    val intent = Intent(this, MainActivity::class.java)
-                    intent.putExtra("selected_tab", "booked_packages")
-                    intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+                    val intent = Intent(this, BookedPackagesActivity::class.java)
                     startActivity(intent)
                     true
                 }
                 R.id.nav_profile -> {
-                    // Already on profile page
+
                     true
                 }
                 else -> false
             }
         }
         
-        // Set profile tab as selected
+
         bottomNavigation.selectedItemId = R.id.nav_profile
         
-        // Edit Profile Button
+
         editProfileButton.setOnClickListener {
             val intent = Intent(this, EditProfileActivity::class.java)
             startActivity(intent)
         }
         
-        // Profile Options
+
         favouritesOption.setOnClickListener {
             val intent = Intent(this, FavouritesActivity::class.java)
             startActivity(intent)

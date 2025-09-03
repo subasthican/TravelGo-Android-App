@@ -17,19 +17,20 @@ class SigiriyaDetailActivity : AppCompatActivity() {
 
         val bookNowButton = findViewById<Button>(R.id.book_now_button)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Bookmark button
+
         bookmarkButton.setOnClickListener {
-            Toast.makeText(this, "Sigiriya added to favorites! ❤️", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SavedItemsActivity::class.java)
+            startActivity(intent)
         }
         
 
         
-        // Book Now button
+
         bookNowButton.setOnClickListener {
             val intent = Intent(this, PersonCountActivity::class.java)
             intent.putExtra("destination", "Sigiriya Adventure")

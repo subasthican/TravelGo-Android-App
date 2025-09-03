@@ -18,12 +18,12 @@ class ForgotPasswordActivity : AppCompatActivity() {
         val nextButton = findViewById<Button>(R.id.next_button)
         val emailInput = findViewById<EditText>(R.id.email_input)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Next button - go to verification step
+
         nextButton.setOnClickListener {
             val intent = Intent(this, ForgotPasswordVerificationActivity::class.java)
             startActivity(intent)

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/splash_blue_gradient">
 
-    <!-- Logo Image - Full Screen Background -->
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,7 +12,7 @@
         android:scaleType="centerCrop"
         android:layout_gravity="center" />
 
-    <!-- Progress Bar - In Front, Bottom Center -->
+
     <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

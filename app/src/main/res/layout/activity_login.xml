@@ -41,7 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
-            android:text="Welcome back! Please sign in to continue"
+            android:text="@string/welcome_back_signin"
             android:textColor="@color/white"
             android:textSize="14sp"
             android:alpha="0.9" />

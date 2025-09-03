@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@drawable/splash_blue_gradient">
 
-    <!-- Header Section -->
+
     <LinearLayout
         android:id="@+id/header_section"
         android:layout_width="0dp"
@@ -13,36 +13,34 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Back Button -->
+
         <ImageButton
             android:id="@+id/back_button"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@drawable/circle_grey_transparent"
-            android:contentDescription="Back button"
             android:src="@drawable/ic_back"
-            android:tint="@color/black" />
+            android:tint="@color/white" />
 
-        <!-- Title -->
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="16dp"
-            android:text="Number of Persons"
-            android:textColor="@color/black"
+            android:text="@string/number_of_persons"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
-    <!-- Destination Info -->
     <LinearLayout
         android:id="@+id/info_section"
         android:layout_width="0dp"
@@ -55,12 +53,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header_section">
 
-        <!-- Destination -->
         <TextView
             android:id="@+id/destination_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sigiriya Adventure"
+            android:text="@string/sigiriya_adventure"
             android:textColor="@color/primary"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -69,13 +66,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="How many people are traveling?"
-            android:textColor="@color/gray_dark"
+            android:text="@string/how_many_traveling"
+            android:textColor="@color/black"
             android:textSize="16sp" />
 
     </LinearLayout>
 
-    <!-- Person Count Section -->
     <LinearLayout
         android:id="@+id/person_count_section"
         android:layout_width="0dp"
@@ -88,86 +84,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/info_section">
 
-        <!-- Adults Counter -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bg_search"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
+            android:orientation="vertical"
             android:padding="24dp">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Adults"
-                    android:textColor="@color/text_primary"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Age 13 and above"
-                    android:textColor="@color/gray_medium"
-                    android:textSize="14sp"
-                    android:layout_marginTop="4dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:text="@string/number_of_persons"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-                <ImageButton
-                    android:id="@+id/decrease_adults_button"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/ic_back"
-                    android:rotation="90"
-                    android:background="@drawable/circle_grey_outline"
-                    android:tint="@color/primary"
-                    android:clickable="true"
-                    android:focusable="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select_people_count"
+                android:textColor="@color/gray_dark"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="16dp" />
 
-                <TextView
-                    android:id="@+id/adults_count"
-                    android:layout_width="80dp"
-                    android:layout_height="wrap_content"
-                    android:text="2"
-                    android:textColor="@color/text_primary"
-                    android:textSize="24sp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:layout_marginStart="24dp"
-                    android:layout_marginEnd="24dp" />
-
-                <ImageButton
-                    android:id="@+id/increase_adults_button"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:src="@drawable/ic_back"
-                    android:rotation="270"
-                    android:background="@drawable/circle_grey_outline"
-                    android:tint="@color/primary"
-                    android:clickable="true"
-                    android:focusable="true" />
-
-            </LinearLayout>
+            <Spinner
+                android:id="@+id/persons_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/circle_grey_outline"
+                android:popupBackground="@color/white"
+                android:spinnerMode="dropdown" />
 
         </LinearLayout>
 
     </LinearLayout>
 
-    <!-- Next Button -->
     <Button
         android:id="@+id/next_button"
         android:layout_width="0dp"
@@ -175,7 +127,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="32dp"
-        android:text="Next to Location"
+        android:text="@string/next_to_location"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"

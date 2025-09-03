@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/splash_blue_gradient"
     tools:context=".BookingPaymentActivity">
 
-    <!-- Header Section -->
+
     <LinearLayout
         android:id="@+id/header_section"
         android:layout_width="0dp"
@@ -15,36 +15,36 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <!-- Back Button -->
+
         <ImageButton
             android:id="@+id/back_button"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:background="@drawable/circle_grey_transparent"
-            android:contentDescription="Back button"
             android:src="@drawable/ic_back"
-            android:tint="@color/black" />
+            android:tint="@color/white" />
 
-        <!-- Title -->
+
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="16dp"
-            android:text="Payment"
-            android:textColor="@color/black"
+            android:text="@string/payment_title"
+            android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
-    <!-- Selection Indicator -->
+
     <TextView
         android:id="@+id/selection_indicator"
         android:layout_width="0dp"
@@ -52,7 +52,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginTop="24dp"
-        android:text="Please select a payment method"
+        android:text="@string/select_payment_method"
         android:textColor="@color/primary"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -62,7 +62,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header_section" />
 
-    <!-- Payment Methods List -->
+
     <LinearLayout
         android:id="@+id/payment_methods_container"
         android:layout_width="0dp"
@@ -76,7 +76,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/selection_indicator">
 
-        <!-- Apple ID Payment Method -->
+
         <LinearLayout
             android:id="@+id/apple_id_item"
             android:layout_width="match_parent"
@@ -88,7 +88,7 @@
             android:focusable="true"
             android:background="@drawable/filter_button_unselected">
 
-            <!-- Apple Icon -->
+
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
@@ -98,7 +98,7 @@
                 android:src="@drawable/ic_globe"
                 android:tint="@color/gray_dark" />
 
-            <!-- Payment Details -->
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Apple ID"
+                    android:text="@string/apple_id"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -117,12 +117,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Balance: PKR2,6000"
+                    android:text="@string/balance_pkr"
                     android:textColor="@color/primary"
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <!-- Action Buttons -->
+
             <ImageButton
                 android:id="@+id/apple_delete_button"
                 android:layout_width="24dp"
@@ -130,7 +130,7 @@
                 android:layout_marginEnd="16dp"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Delete Apple ID payment method"
-                android:src="@drawable/ic_heart"
+                android:src="@drawable/ic_trash"
                 android:tint="@color/error" />
 
             <ImageButton
@@ -144,7 +144,7 @@
                 android:tint="@color/black" />
         </LinearLayout>
 
-        <!-- Divider -->
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -152,7 +152,7 @@
             android:layout_marginEnd="20dp"
             android:background="@color/gray_medium" />
 
-        <!-- Master Card Payment Method -->
+
         <LinearLayout
             android:id="@+id/mastercard_item"
             android:layout_width="match_parent"
@@ -164,7 +164,7 @@
             android:focusable="true"
             android:background="@drawable/filter_button_unselected">
 
-            <!-- Mastercard Icon -->
+
             <LinearLayout
                 android:layout_width="32dp"
                 android:layout_height="32dp"
@@ -185,7 +185,7 @@
                     android:background="@color/error" />
             </LinearLayout>
 
-            <!-- Payment Details -->
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -209,7 +209,7 @@
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <!-- Action Buttons -->
+
             <ImageButton
                 android:id="@+id/mastercard_delete_button"
                 android:layout_width="24dp"
@@ -217,7 +217,7 @@
                 android:layout_marginEnd="16dp"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Delete Master Card payment method"
-                android:src="@drawable/ic_heart"
+                android:src="@drawable/ic_trash"
                 android:tint="@color/error" />
 
             <ImageButton
@@ -231,7 +231,7 @@
                 android:tint="@color/black" />
         </LinearLayout>
 
-        <!-- Divider -->
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -239,7 +239,7 @@
             android:layout_marginEnd="20dp"
             android:background="@color/gray_medium" />
 
-        <!-- Visa Payment Method -->
+
         <LinearLayout
             android:id="@+id/visa_item"
             android:layout_width="match_parent"
@@ -251,7 +251,7 @@
             android:focusable="true"
             android:background="@drawable/filter_button_unselected">
 
-            <!-- Visa Icon -->
+
             <LinearLayout
                 android:layout_width="32dp"
                 android:layout_height="32dp"
@@ -268,7 +268,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- Payment Details -->
+
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -292,7 +292,7 @@
                     android:textSize="14sp" />
             </LinearLayout>
 
-            <!-- Action Buttons -->
+
             <ImageButton
                 android:id="@+id/visa_delete_button"
                 android:layout_width="24dp"
@@ -300,7 +300,7 @@
                 android:layout_marginEnd="16dp"
                 android:background="?android:attr/selectableItemBackgroundBorderless"
                 android:contentDescription="Delete Visa payment method"
-                android:src="@drawable/ic_heart"
+                android:src="@drawable/ic_trash"
                 android:tint="@color/error" />
 
             <ImageButton
@@ -314,7 +314,7 @@
                 android:tint="@color/black" />
         </LinearLayout>
 
-        <!-- Divider -->
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
@@ -322,7 +322,7 @@
             android:layout_marginEnd="20dp"
             android:background="@color/gray_medium" />
 
-        <!-- Add Payment Method -->
+
         <LinearLayout
             android:id="@+id/add_payment_method"
             android:layout_width="match_parent"
@@ -334,7 +334,7 @@
             android:focusable="true"
             android:background="?android:attr/selectableItemBackground">
 
-            <!-- Add Icon -->
+
             <ImageView
                 android:layout_width="32dp"
                 android:layout_height="32dp"
@@ -344,7 +344,7 @@
                 android:src="@drawable/ic_globe"
                 android:tint="@color/primary" />
 
-            <!-- Add Payment Method Text -->
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -358,22 +358,6 @@
 
     </LinearLayout>
 
-    <!-- Confirm Payment Button -->
-    <Button
-        android:id="@+id/confirm_payment_button"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
-        android:text="Confirm Payment"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:background="@drawable/book_now_button_background"
-        android:elevation="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

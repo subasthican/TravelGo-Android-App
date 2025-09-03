@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:background="@drawable/splash_blue_gradient">
 
-    <!-- Header -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,14 +29,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="16dp"
-            android:text="About TravelGo"
+            android:text="@string/about_travelgo"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
-    <!-- Content -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -49,7 +49,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!-- App Info Card -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                 android:layout_marginBottom="16dp"
                 android:gravity="center">
 
-                <!-- App Logo -->
+
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
@@ -71,7 +71,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TravelGo"
+                    android:text="@string/app_name"
                     android:textColor="@color/white"
                     android:textSize="24sp"
                     android:textStyle="bold"
@@ -80,7 +80,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Version 1.0.0"
+                    android:text="@string/version_1_0_0"
                     android:textColor="@color/primary_light"
                     android:textSize="16sp"
                     android:layout_marginBottom="16dp" />
@@ -88,7 +88,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Your ultimate travel companion for discovering amazing destinations around the world."
+                    android:text="@string/about_description"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:gravity="center"
@@ -96,7 +96,7 @@
 
             </LinearLayout>
 
-            <!-- App Features -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Features"
+                    android:text="@string/features"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -117,7 +117,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="• Discover amazing destinations"
+                    android:text="@string/feature_discover"
                     android:textColor="@color/black"
                     android:textSize="16sp"
                     android:layout_marginBottom="8dp" />
@@ -148,7 +148,7 @@
 
             </LinearLayout>
 
-            <!-- Legal Links -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -166,7 +166,7 @@
                     android:textStyle="bold"
                     android:layout_marginBottom="16dp" />
 
-                <!-- Terms of Service -->
+
                 <LinearLayout
                     android:id="@+id/terms_option"
                     android:layout_width="match_parent"
@@ -195,7 +195,7 @@
 
                 </LinearLayout>
 
-                <!-- Privacy Policy -->
+
                 <LinearLayout
                     android:id="@+id/privacy_policy_option"
                     android:layout_width="match_parent"
@@ -224,7 +224,7 @@
 
                 </LinearLayout>
 
-                <!-- Licenses -->
+
                 <LinearLayout
                     android:id="@+id/licenses_option"
                     android:layout_width="match_parent"
@@ -255,7 +255,7 @@
 
             </LinearLayout>
 
-            <!-- Copyright -->
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

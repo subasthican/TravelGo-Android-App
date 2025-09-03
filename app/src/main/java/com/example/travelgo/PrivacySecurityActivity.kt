@@ -18,17 +18,17 @@ class PrivacySecurityActivity : AppCompatActivity() {
         val changePasswordOption = findViewById<LinearLayout>(R.id.change_password_option)
         val twoFactorOption = findViewById<LinearLayout>(R.id.two_factor_option)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Change password option
+
         changePasswordOption.setOnClickListener {
             Toast.makeText(this, "Change password feature coming soon!", Toast.LENGTH_SHORT).show()
         }
         
-        // Two-factor authentication option
+
         twoFactorOption.setOnClickListener {
             Toast.makeText(this, "Two-factor authentication feature coming soon!", Toast.LENGTH_SHORT).show()
         }

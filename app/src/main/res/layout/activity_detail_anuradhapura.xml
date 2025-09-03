@@ -10,53 +10,44 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- Hero Image Section -->
-        <LinearLayout
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:background="@drawable/anurathapura"
-            android:gravity="bottom"
-            android:orientation="vertical"
-            android:padding="24dp">
+            android:background="@drawable/anurathapura">
 
-            <!-- Back Button Overlay -->
+
             <ImageButton
                 android:id="@+id/back_button"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="top|start"
                 android:layout_marginTop="48dp"
+                android:layout_marginStart="24dp"
                 android:background="@drawable/circle_grey_transparent"
                 android:src="@drawable/ic_back"
                 android:tint="@color/white" />
 
-            <!-- Action Buttons Overlay -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
+
+            <ImageButton
+                android:id="@+id/bookmark_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="top|end"
                 android:layout_marginTop="48dp"
-                android:gravity="end"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/bookmark_button"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_marginEnd="8dp"
-                    android:background="@drawable/circle_grey_transparent"
-                    android:src="@drawable/ic_bookmark"
-                    android:tint="@color/white" />
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/circle_grey_transparent"
+                android:src="@drawable/ic_bookmark"
+                android:tint="@color/white" />
 
 
-
-            </LinearLayout>
-
-            <!-- Destination Info Overlay -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_gravity="bottom"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -100,23 +91,23 @@
 
             </LinearLayout>
 
-        </LinearLayout>
+        </FrameLayout>
 
-        <!-- Content Section -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="24dp">
 
-            <!-- Quick Info Cards -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
                 android:orientation="horizontal">
 
-                <!-- Rating Card -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -151,7 +142,7 @@
 
                 </LinearLayout>
 
-                <!-- Duration Card -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -187,7 +178,7 @@
 
                 </LinearLayout>
 
-                <!-- Price Card -->
+
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -224,7 +215,7 @@
 
             </LinearLayout>
 
-            <!-- Description Section -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -252,7 +243,7 @@
 
             </LinearLayout>
 
-            <!-- Highlights Section -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -327,7 +318,7 @@
 
             </LinearLayout>
 
-            <!-- Best Time to Visit -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -355,11 +346,11 @@
 
             </LinearLayout>
 
-            <!-- Book Now Button -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="end"
+                android:gravity="center"
                 android:layout_marginBottom="32dp">
 
                 <Button

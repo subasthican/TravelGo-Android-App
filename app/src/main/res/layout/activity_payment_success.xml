@@ -8,7 +8,6 @@
     android:background="@color/white"
     android:padding="32dp">
 
-    <!-- Success Icon -->
     <ImageView
         android:id="@+id/success_icon"
         android:layout_width="120dp"
@@ -17,40 +16,36 @@
         android:tint="@color/primary"
         android:layout_marginBottom="32dp" />
 
-    <!-- Success Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Payment Successful! 🎉"
+                    android:text="@string/payment_successful_title"
         android:textColor="@color/primary"
         android:textSize="28sp"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_marginBottom="16dp" />
 
-    <!-- Success Message -->
     <TextView
         android:id="@+id/success_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Payment successful for your trip!"
+                    android:text="@string/payment_successful_message"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:gravity="center"
         android:layout_marginBottom="16dp" />
 
-    <!-- Payment Method Info -->
     <TextView
         android:id="@+id/payment_method_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Paid with: Selected payment method"
+                    android:text="@string/paid_with_selected"
         android:textColor="@color/gray_dark"
         android:textSize="16sp"
         android:gravity="center"
         android:layout_marginBottom="32dp" />
 
-    <!-- Success Details Card -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -70,7 +65,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Booking Confirmed"
+                android:text="@string/booking_confirmed"
                 android:textColor="@color/primary"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -79,7 +74,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="✅ Your booking has been confirmed"
+                android:text="@string/booking_confirmed_message"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
@@ -87,7 +82,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="✅ Payment has been processed"
+                android:text="@string/payment_processed"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
@@ -95,7 +90,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="✅ Confirmation email sent"
+                android:text="@string/confirmation_email_sent"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:layout_marginBottom="8dp" />
@@ -103,7 +98,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="✅ Ready for your adventure!"
+                android:text="@string/ready_for_adventure"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -111,12 +106,11 @@
 
     </androidx.cardview.widget.CardView>
 
-    <!-- Continue Button -->
     <Button
         android:id="@+id/continue_button"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:text="Continue to Home"
+                    android:text="@string/continue_to_home"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"

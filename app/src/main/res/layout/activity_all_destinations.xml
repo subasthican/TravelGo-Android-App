@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="@drawable/splash_blue_gradient">
 
-    <!-- Header -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
 
     </LinearLayout>
 
-    <!-- Destinations List -->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/destinations_recycler_view"
         android:layout_width="match_parent"

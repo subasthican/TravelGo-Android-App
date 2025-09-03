@@ -17,23 +17,23 @@ class DambullaDetailActivity : AppCompatActivity() {
 
         val bookNowButton = findViewById<Button>(R.id.book_now_button)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Bookmark button
+
         bookmarkButton.setOnClickListener {
-            Toast.makeText(this, "Dambulla Cave Temple added to favorites! ❤️", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, SavedItemsActivity::class.java)
+            startActivity(intent)
         }
         
 
         
-        // Book Now button
+
         bookNowButton.setOnClickListener {
-            val intent = Intent(this, BookingMembersActivity::class.java)
+            val intent = Intent(this, PersonCountActivity::class.java)
             intent.putExtra("destination", "Dambulla Cave Temple")
-            intent.putExtra("destination_type", "Cultural Heritage")
             startActivity(intent)
         }
         

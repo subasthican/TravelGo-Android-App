@@ -18,12 +18,12 @@ class LanguageSettingsActivity : AppCompatActivity() {
         val languageRadioGroup = findViewById<RadioGroup>(R.id.language_radio_group)
         val saveButton = findViewById<Button>(R.id.save_button)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Save button
+
         saveButton.setOnClickListener {
             val selectedId = languageRadioGroup.checkedRadioButtonId
             if (selectedId != -1) {

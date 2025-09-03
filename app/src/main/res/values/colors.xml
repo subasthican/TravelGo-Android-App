@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Colors (60%) - Deep Blue representing trust and adventure -->
+    <!-- Primary Colors  -->
     <color name="primary">#1976D2</color>
     <color name="primary_dark">#1565C0</color>
     <color name="primary_light">#BBDEFB</color>
     <color name="primary_variant">#0D47A1</color>
     
-    <!-- Splash Screen Colors - Dark Blue Gradient -->
+
     <color name="splash_blue_dark">#0A1E3A</color>
-    <color name="splash_blue_medium">#1A3A5F</color>
-    <color name="splash_blue_light">#2A4A7F</color>
     
-    <!-- Home Page Colors - Dark Theme -->
+
     <color name="home_background">#0A1E3A</color>
     <color name="card_background">#1A3A5F</color>
     <color name="search_bar">#FFFFFF</color>
     <color name="filter_selected">#2A4A7F</color>
     <color name="filter_unselected">#FFFFFF</color>
     <color name="text_primary_white">#FFFFFF</color>
-    <color name="text_secondary_gray">#B0B0B0</color>
     <color name="accent_orange">#FF9800</color>
-    
-    <!-- Secondary Colors (30%) - Warm Orange representing energy and exploration -->
-    <color name="secondary">#FF9800</color>
-    <color name="secondary_dark">#F57C00</color>
-    <color name="secondary_light">#FFE0B2</color>
-    <color name="secondary_variant">#E65100</color>
-    
-    <!-- Accent Colors (10%) - Teal for highlights and CTAs -->
-    <color name="accent">#009688</color>
     <color name="accent_light">#B2DFDB</color>
     
-    <!-- Neutral Colors -->
+
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="gray_light">#F5F5F5</color>
@@ -39,14 +27,11 @@
     <color name="gray_dark">#757575</color>
     <color name="text_primary">#212121</color>
     <color name="text_secondary">#757575</color>
-    <color name="divider">#BDBDBD</color>
     
-    <!-- Status Colors -->
+
     <color name="success">#4CAF50</color>
-    <color name="warning">#FFC107</color>
     <color name="error">#F44336</color>
-    <color name="info">#2196F3</color>
     
-    <!-- Onboarding Colors -->
+
     <color name="onboarding_text_light">#E8F4FD</color>
 </resources>

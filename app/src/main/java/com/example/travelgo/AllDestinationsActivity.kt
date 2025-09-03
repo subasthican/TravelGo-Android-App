@@ -22,15 +22,15 @@ class AllDestinationsActivity : AppCompatActivity() {
         val backButton = findViewById<ImageButton>(R.id.back_button)
         val titleText = findViewById<TextView>(R.id.title_text)
         
-        // Set title
-        titleText.text = "All Destinations"
+
+        titleText.text = getString(R.string.all_destinations)
         
-        // Back button
+
         backButton.setOnClickListener {
             finish()
         }
         
-        // Set up destinations list
+
         setupDestinationsList()
     }
     
@@ -39,7 +39,7 @@ class AllDestinationsActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         
         val destinations = listOf(
-            Destination("Sigiriya, Sri Lanka", "Ancient rock fortress", R.drawable.sigiriya, "SigiriyaDetailActivity"),
+            Destination("Sigiriya, Sri Lanka", "Ancient rock fortress", R.drawable.kandy, "SigiriyaDetailActivity"),
             Destination("Kandy, Sri Lanka", "Cultural capital", R.drawable.kandy, "KandyDetailActivity"),
             Destination("Galle, Sri Lanka", "Coastal fortress city", R.drawable.galle, "GalleDetailActivity"),
             Destination("Polonnaruwa, Sri Lanka", "Ancient kingdom ruins", R.drawable.polonnaruwa, "PolonnaruwaDetailActivity"),
@@ -63,7 +63,7 @@ class AllDestinationsActivity : AppCompatActivity() {
             val intent = Intent(this, activityClass)
             startActivity(intent)
         } catch (e: Exception) {
-            // Fallback to generic details activity
+
             val intent = Intent(this, SigiriyaDetailActivity::class.java)
             startActivity(intent)
         }
@@ -98,6 +98,7 @@ class AllDestinationsActivity : AppCompatActivity() {
             private val destinationName: TextView = itemView.findViewById(R.id.destination_name)
             private val destinationDescription: TextView = itemView.findViewById(R.id.destination_description)
             private val heartIcon: ImageView = itemView.findViewById(R.id.heart_icon)
+            private val savedIcon: ImageView = itemView.findViewById(R.id.saved_icon)
             
             fun bind(destination: Destination) {
                 destinationImage.setImageResource(destination.imageResource)
@@ -108,10 +109,26 @@ class AllDestinationsActivity : AppCompatActivity() {
                     onDestinationClick(destination)
                 }
                 
+
                 heartIcon.setOnClickListener {
-                    // Toggle favorite state
-                    heartIcon.setImageResource(R.drawable.ic_heart)
+                    val intent = Intent(this@AllDestinationsActivity, FavouritesActivity::class.java)
+                    startActivity(intent)
                 }
+                
+
+                heartIcon.setImageResource(R.drawable.ic_heart_outline)
+                heartIcon.setColorFilter(resources.getColor(R.color.primary, null))
+                heartIcon.tag = "not_favorited"
+                
+
+                savedIcon.setOnClickListener {
+                    val intent = Intent(this@AllDestinationsActivity, SavedItemsActivity::class.java)
+                    startActivity(intent)
+                }
+                
+
+                savedIcon.setImageResource(R.drawable.ic_bookmark)
+                savedIcon.setColorFilter(resources.getColor(R.color.primary, null))
             }
         }
     }

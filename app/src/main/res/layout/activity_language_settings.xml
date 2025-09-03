@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="16dp"
-            android:text="Language Settings"
+            android:text="@string/language_settings_title"
             android:textColor="@color/primary_light"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -63,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select Language"
+            android:text="@string/select_language_hint"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:checked="false"
-                android:text="தமிழ் - Tamil"
+                android:text="@string/tamil_language"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:buttonTint="@color/primary_light" />
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:checked="true"
-                android:text="English"
+                android:text="@string/english_language"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:buttonTint="@color/primary_light" />
@@ -102,7 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Spanish"
+                android:text="@string/spanish_language"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:buttonTint="@color/primary_light" />
@@ -112,7 +112,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="French"
+                android:text="@string/french_language"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:buttonTint="@color/primary_light" />
@@ -121,7 +121,7 @@
                 android:id="@+id/german_radio"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="German"
+                android:text="@string/german_language"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:buttonTint="@color/primary_light" />

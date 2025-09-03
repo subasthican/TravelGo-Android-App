@@ -3,50 +3,48 @@ package com.example.travelgo
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Spinner
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class PersonCountActivity : AppCompatActivity() {
     
-    // Person count variables
-    private lateinit var adultsCountText: TextView
-    private lateinit var decreaseAdultsButton: ImageButton
-    private lateinit var increaseAdultsButton: ImageButton
-    private var adultsCount = 2
+
+    private lateinit var personsSpinner: Spinner
+    private var personsCount = 2
     
-    // Data from previous activity
+
     private var destination: String = ""
     
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_person_count)
         
-        // Get data from previous activity
+
         destination = intent.getStringExtra("destination") ?: "Destination"
         
-        // Initialize views
+
         initializeViews()
         
-        // Set up back button
+
         setupBackButton()
         
-        // Set up person count functionality
+
         setupPersonCountFunctionality()
         
-        // Set up next button
+
         setupNextButton()
         
-        // Update UI with received data
+
         updateUI()
     }
     
     private fun initializeViews() {
-        adultsCountText = findViewById(R.id.adults_count)
-        decreaseAdultsButton = findViewById(R.id.decrease_adults_button)
-        increaseAdultsButton = findViewById(R.id.increase_adults_button)
+        personsSpinner = findViewById(R.id.persons_spinner)
     }
     
     private fun setupBackButton() {
@@ -56,28 +54,24 @@ class PersonCountActivity : AppCompatActivity() {
     }
     
     private fun setupPersonCountFunctionality() {
-        // Update display
-        updateAdultsCount()
+        // Set up spinner with numbers 1-10
+        val numbers = (1..10).toList()
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, numbers)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        personsSpinner.adapter = adapter
         
-        // Decrease adults button
-        decreaseAdultsButton.setOnClickListener {
-            if (adultsCount > 1) {
-                adultsCount--
-                updateAdultsCount()
-                Toast.makeText(this, "Adults: $adultsCount", Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(this, "Minimum 1 adult required", Toast.LENGTH_SHORT).show()
+        // Set default selection to 2
+        personsSpinner.setSelection(1) //
+        
+        // Handle spinner selection
+        personsSpinner.onItemSelectedListener = object : android.widget.AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: android.widget.AdapterView<*>?, view: View?, position: Int, id: Long) {
+                personsCount = numbers[position]
+                Toast.makeText(this@PersonCountActivity, "Selected: $personsCount persons", Toast.LENGTH_SHORT).show()
             }
-        }
-        
-        // Increase adults button
-        increaseAdultsButton.setOnClickListener {
-            if (adultsCount < 10) {
-                adultsCount++
-                updateAdultsCount()
-                Toast.makeText(this, "Adults: $adultsCount", Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(this, "Maximum 10 adults allowed", Toast.LENGTH_SHORT).show()
+            
+            override fun onNothingSelected(parent: android.widget.AdapterView<*>?) {
+
             }
         }
     }
@@ -88,20 +82,17 @@ class PersonCountActivity : AppCompatActivity() {
         }
     }
     
-    private fun updateAdultsCount() {
-        adultsCountText.text = adultsCount.toString()
-    }
+
     
     private fun updateUI() {
-        // Update destination text
+
         findViewById<TextView>(R.id.destination_text).text = destination
     }
     
     private fun proceedToLocation() {
-        // Navigate to location activity with collected data
-        val intent = Intent(this, LocationActivity::class.java)
+        val intent = Intent(this, BookingLocationActivity::class.java)
         intent.putExtra("destination", destination)
-        intent.putExtra("adults_count", adultsCount)
+        intent.putExtra("persons_count", personsCount)
         startActivity(intent)
         finish()
     }

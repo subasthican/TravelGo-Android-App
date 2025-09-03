@@ -20,7 +20,7 @@
         android:orientation="horizontal"
         android:padding="16dp">
 
-        <!-- Package Image -->
+
         <ImageView
             android:id="@+id/package_image"
             android:layout_width="80dp"
@@ -30,7 +30,7 @@
             android:background="@drawable/circle_grey_outline"
             android:padding="4dp" />
 
-        <!-- Package Details -->
+
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
             android:layout_marginStart="16dp"
             android:gravity="center_vertical">
 
-            <!-- Package Name -->
+
             <TextView
                 android:id="@+id/package_name"
                 android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
                 android:textStyle="bold"
                 android:layout_marginBottom="8dp" />
 
-            <!-- Booking Date -->
+
             <TextView
                 android:id="@+id/booking_date"
                 android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
                 android:textSize="14sp"
                 android:layout_marginBottom="4dp" />
 
-            <!-- Status -->
+
             <TextView
                 android:id="@+id/status"
                 android:layout_width="wrap_content"

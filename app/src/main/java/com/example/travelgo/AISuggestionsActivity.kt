@@ -1,5 +1,6 @@
 package com.example.travelgo
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Toast
@@ -11,20 +12,26 @@ class AISuggestionsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ai_suggestions)
 
-        // Setup back button
         findViewById<ImageView>(R.id.back_button).setOnClickListener {
             finish()
         }
 
-        // Setup favorite buttons
+
         setupFavoriteButton(R.id.favorite_button_1, "Nallur")
         setupFavoriteButton(R.id.favorite_button_2, "Sigiriya")
         setupFavoriteButton(R.id.favorite_button_3, "Kandy")
 
-        // Setup view details buttons
-        setupViewDetailsButton(R.id.view_details_button_1, "Nallur")
-        setupViewDetailsButton(R.id.view_details_button_2, "Sigiriya")
-        setupViewDetailsButton(R.id.view_details_button_3, "Kandy")
+
+        setupViewDetailsButton(R.id.view_details_button_1, "Nallur", NallurDetailActivity::class.java)
+        setupViewDetailsButton(R.id.view_details_button_2, "Sigiriya", SigiriyaDetailActivity::class.java)
+        setupViewDetailsButton(R.id.view_details_button_3, "Kandy", KandyDetailActivity::class.java)
+
+        findViewById<ImageView>(R.id.home_button).setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
+            finish()
+        }
     }
 
     private fun setupFavoriteButton(buttonId: Int, destinationName: String) {
@@ -44,10 +51,10 @@ class AISuggestionsActivity : AppCompatActivity() {
         }
     }
 
-    private fun setupViewDetailsButton(buttonId: Int, destinationName: String) {
+    private fun setupViewDetailsButton(buttonId: Int, destinationName: String, activityClass: Class<*>) {
         findViewById<ImageView>(buttonId).setOnClickListener {
-            Toast.makeText(this, "View $destinationName details", Toast.LENGTH_SHORT).show()
-            // TODO: Navigate to destination detail page
+            val intent = Intent(this, activityClass)
+            startActivity(intent)
         }
     }
 }
